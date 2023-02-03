@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "handies"
+version = "0.1.0"
+description = "Small collection of utilities for Python + Spark or SQL that I leverage in my personal and professional data science work."
+authors = ["patrick-nicholson <patrick.nicholson@outlook.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+pyspark = ">=3.3.1"
+numpy = ">=1.24.1"
+scipy = ">=1.10.0"
+
+[tool.poetry.dev-dependencies]
+pytest = ">=7.2.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
