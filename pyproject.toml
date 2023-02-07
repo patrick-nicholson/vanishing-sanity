@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "handies"
+name = "vanishing-sanity"
 version = "0.1.0"
-description = "Small collection of utilities for Python + Spark or SQL that I leverage in my personal and professional data science work."
+description = "Make data science, not war"
 authors = ["patrick-nicholson <patrick.nicholson@outlook.com>"]
 
 [tool.poetry.dependencies]

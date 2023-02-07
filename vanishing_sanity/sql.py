@@ -115,8 +115,9 @@ class SqlSampling:
 
         Notes
         -----
-        For Postgres, array_range=postgres_array_constructor (see below) and array_flatten='unnest'.
-        For Spark/Hive, array_range='array_range' and array_flatten='explode'.
+        For Postgres, array_range=postgres_array_range_literal (see below) and
+        array_flatten='unnest'. For Spark/Hive, array_range='array_range'
+        array_flatten='explode'.
         """
         sampling.validate_fraction(frac=frac, replace=replace)
         if not replace:
@@ -151,6 +152,6 @@ class SqlSampling:
         """
 
 
-def postgres_array_range(size: int) -> str:
+def postgres_array_range_literal(size: int) -> str:
     """Array range function for Postgres"""
     return f"ARRAY[{','.join(str(i) for i in range(size))}]"
